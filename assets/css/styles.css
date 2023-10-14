@@ -1,0 +1,50 @@
+:root {
+    /*font size*/
+    --fs-sm1: 18px;
+    --fs-sm2: 22px;
+    --fs-md: 22.5px;
+    --fs-lg: 35.16px;
+    --fs-xl: 76.042px;
+    /*color*/
+    --purple1: #8661C5;
+    --purple2: #3B2E58;
+    --purple3: #D59DFF;
+    --grey1: #FAF9FD;
+    --grey2: #E9E6F5;
+    --black1: #2E2E2E;
+    --blue: #0067B8;
+}
+
+/* font family */
+@font-face {
+    font-family: 'Segoe-UI-regular';
+    src: url(/assets/font-family/SegoeUI/SegoeUI.ttf)
+}
+
+@font-face {
+    font-family: 'Segoe-UI-semibold';
+    src: url(/assets/font-family/SegoeUI/SegoeUI.ttf)
+}
+
+.ff-segoe-regular {
+    font-family: 'Segoe-UI-regular';
+}
+
+.ff-segoe-semibold {
+    font-family: 'Segoe-UI-semibold';
+}
+
+/* line height */
+.line-height-139 {
+    line-height: 139.023%;
+}
+
+.line-height-normal {
+    line-height: normal;
+}
+
+/* opacity */
+
+.opacity07 {
+    opacity: 0.7;
+}
