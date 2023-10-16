@@ -2,9 +2,9 @@
     /*font size*/
     --fs-sm1: 18px;
     --fs-sm2: 22px;
-    --fs-md: 22.5px;
+    --fs-md: 18px; /*original 22.5px*/
     --fs-lg: 35.16px;
-    --fs-xl: 76.042px;
+    --fs-xl: 35px; /*original 76.042px*/
     /*color*/
     --purple1: #8661C5;
     --purple2: #3B2E58;
@@ -74,11 +74,24 @@
     font-size: var(--fs-xl);
 }
 
+/* color */
+.grey1 {
+    color: var(--grey1)
+}
+
+.purple2 {
+    color: var(--purple2);
+}
+
 a {
     color: unset !important;
 }
 
 /* header */
+.min-height-header {
+    min-height: 100vh;
+}
+
 /* navbar */
 .navbar-custom-container {
     max-width: 916px !important;
@@ -142,11 +155,84 @@ nav ul li:hover::after {
     transition: all linear 500ms;
 }
 
+/* hero section */
+.hero-section-bg {
+    background-image: url(/assets/images/herosectionimg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.start-now-box {
+    max-width: 709.795px;
+    height: 300px;
+    background-color: rgba(134, 97, 197, 0.7);
+    box-shadow: 3.72705px 3.72705px 16.77172px 0px rgba(0, 0, 0, 0.70);
+}
+
+.max-width-496 {
+    max-width: 496px;
+}
+
+.hero-section-btn {
+    padding: 14px 42px;
+    background: var(--grey2);
+    border: none;
+    color: var(--purple2)
+}
+
+.hero-section-btn:hover {
+    background: var(--purple2);
+    color: var(--grey2);
+}
+
+.custom-container1 {
+    max-width: 1694px !important;
+}
+
+@media(min-width: 576px) {
+    :root {
+        /*font size*/
+        --fs-sm1: 18px;
+        --fs-sm2: 22px;
+        --fs-md: 22.5px;
+        --fs-lg: 35.16px;
+        --fs-xl: 76.042px;
+    }
+
+    /* hero section */
+    .start-now-box {
+        height: 450px;
+    }
+}
+
+@media(min-width: 768px) {
+
+    /* hero section */
+    .hero-section-bg {
+        background-image: url(/assets/images/herosectionimg3.png);
+    }
+}
+
+
 @media(min-width: 992px) {
 
     /* nav bar */
     .view {
         position: unset;
         background: unset;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    /* hero section */
+    .min-height-header {
+        min-height: 852px;
+    }
+
+    .start-now-box {
+        max-width: 709.795px;
+        height: 636.027px;
     }
 }
