@@ -185,7 +185,8 @@ nav ul li:hover::after {
     padding: 14px 42px;
     background: var(--grey2);
     border: none;
-    color: var(--purple2)
+    color: var(--purple2);
+    transition: all linear 200ms;
 }
 
 .hero-section-btn:hover {
@@ -216,8 +217,11 @@ nav ul li:hover::after {
 }
 
 /* section2 */
-.section2-bg {
+.grey1-bg {
     background-color: var(--grey1);
+}
+
+.min-height-863 {
     min-height: 863px;
 }
 
@@ -289,12 +293,58 @@ nav ul li:hover::after {
     color: var(--grey1);
     border: none;
     font-size: var(--fs-sm1);
+    transition: all linear 200ms;
 }
 
 .section3-btn:hover {
     color: var(--purple3);
     background: var(--grey1);
 }
+
+/* section4 */
+
+.section4-container {
+    max-width: 1628px !important;
+}
+
+.max-width-828 {
+    max-width: 828px;
+}
+
+.section4-box {
+    /* width: 253.834px; */
+    width: 93%;
+    height: 172.299px;
+    background: var(--grey1);
+    box-shadow: 0px 3.076772689819336px 7.69193172454834px rgba(0, 0, 0, 0.25);
+}
+
+.section4-row-gap {
+    row-gap: 16px;
+}
+
+.max-width-1350 {
+    max-width: 1350px;
+}
+
+.section4-btn {
+    width: 250px;
+    height: 50px;
+    background: var(--purple3);
+    color: var(--grey1);
+    border: none;
+    font-size: var(--fs-sm1);
+    transition: all linear 200ms;
+}
+
+.section4-btn:hover {
+    background: var(--purple2);
+}
+
+
+
+
+
 
 @media(min-width: 576px) {
     :root {
@@ -316,6 +366,13 @@ nav ul li:hover::after {
     .section3-btn {
         font-size: var(--fs-lg);
     }
+
+    /* section4 */
+    .section4-btn {
+        width: 420px;
+        height: 114px;
+        font-size: var(--fs-lg);
+    }
 }
 
 @media(min-width: 768px) {
@@ -333,6 +390,15 @@ nav ul li:hover::after {
     .min-height-1061 {
         min-height: 1061px;
     }
+
+    /* section4 */
+    .min-height-1129 {
+        min-height: 1129px;
+    }
+
+    .section4-row-gap {
+        row-gap: 32px;
+    }
 }
 
 
@@ -342,6 +408,16 @@ nav ul li:hover::after {
     .view {
         position: unset;
         background: unset;
+    }
+
+    .rings1 {
+        right: -338px;
+        top: 24%;
+    }
+
+    .rings2 {
+        bottom: 19%;
+        left: -366px;
     }
 
     /* section2 */
@@ -372,8 +448,30 @@ nav ul li:hover::after {
 
     /* section2 */
 
+    .rings1 {
+        top: 14%;
+    }
+
+    .rings2 {
+        bottom: 17%;
+        left: -366px;
+    }
+
     .height-372 {
         min-height: 372px;
+    }
+
+    /* section4 */
+    .section4-box {
+        width: 93%;
+    }
+
+    .w-80 {
+        width: 80%;
+    }
+
+    .section4-btn {
+        width: 31%;
     }
 }
 
