@@ -16,3 +16,19 @@ function navbar2() {
     span3.classList.toggle("d-none");
     document.querySelector("body").classList.remove("overflow-hidden");
 };
+
+$('.section5-slick-slider').slick({
+    prevArrow: '.prev',
+    nextArrow: '.next',
+    autoplay: true,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+            }
+        }
+    ]
+});
+
+
